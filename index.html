@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventure – Promotional Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home">LOGO</a>
+      <div class="nav-links">
+        <a href="#home">HOME</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-label">
+            ABOUT
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+          <div class="nav-dropdown-menu">
+            <a href="#about">About the System</a>
+            <a href="#preview">System Preview</a>
+            <a href="#tutorial">System Tutorial</a>
+            <a href="#team">Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SCREEN 1: LANDING PAGE -->
+  <section id="home">
+    <div class="section-inner">
+      <div class="hero-grid">
+        <div>
+          <p class="hero-label">EVENTURE:</p>
+          <p class="hero-text">
+            Eventure is a desktop-based event management system designed to help student leaders organize and monitor event participants efficiently.
+          </p>
+          <p class="hero-text">
+            From creating events to tracking attendance and monitoring capacity, Eventure brings order to campus event management — replacing scattered spreadsheets with a unified, reliable platform built for student organizations.
+          </p>
+          <p class="hero-text">
+            Whether you're running a small club meeting or a university-wide seminar, Eventure gives you the tools to stay in control and ensure nothing falls through the cracks.
+          </p>
+          <a class="btn" href="#about">DOWNLOAD</a>
+        </div>
+        <div class="hero-img-wrap">
+          <img src="/assets/hero-app.png" alt="Eventure system interface" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 2: ABOUT THE SYSTEM -->
+  <section id="about">
+    <div class="about-row">
+      <div class="about-img">
+        <img src="/assets/campus-event.png" alt="Campus event" />
+      </div>
+      <div class="about-text">
+        <h2>What is Eventure?</h2>
+        <p>Eventure is a purpose-built desktop application that empowers student leaders to plan, manage, and monitor campus events from a single, unified interface.</p>
+        <p>The system consolidates participant registration, capacity tracking, and attendance recording into one streamlined workflow — eliminating the need for disconnected spreadsheets, paper lists, or group chats.</p>
+        <p>Designed with the university ecosystem in mind, Eventure gives student organizations the same level of operational control that professional event managers rely on — adapted for the campus environment.</p>
+        <p>From creating a new event to generating post-event reports, every step is handled within Eventure, giving organizers full visibility and control throughout the entire event lifecycle.</p>
+      </div>
+    </div>
+
+    <div class="about-row">
+      <div class="about-text">
+        <h2>Why Eventure matters</h2>
+        <p>Campus events are essential to student life — but managing them is often a disorganized mess. Student organizations typically rely on scattered tools that aren't designed for the complexity of event coordination.</p>
+        <p>Eventure was born from that frustration. It solves the real problems student leaders face: overcrowded venues, inaccurate headcounts, lost registration data, and last-minute scrambles to track who showed up.</p>
+        <p>By centralizing everything — from initial event setup to real-time capacity monitoring — Eventure reduces the administrative burden on organizers and ensures participants have a smoother, more organized experience.</p>
+        <p>Ultimately, Eventure matters because better-organized events mean better experiences for everyone on campus. It raises the standard of what student-led events can look like.</p>
+      </div>
+      <div class="about-img">
+        <img src="/assets/hero-app.png" alt="Eventure dashboard" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 3: SYSTEM PREVIEW -->
+  <section id="preview">
+    <div class="section-inner">
+      <h2 class="section-title">Previews</h2>
+      <div class="preview-large">
+        <img src="/assets/hero-app.png" alt="Eventure main dashboard" />
+      </div>
+      <div class="preview-small-row">
+        <div class="preview-small">
+          <img src="/assets/campus-event.png" alt="Eventure participant view" />
+        </div>
+        <div class="preview-small">
+          <img src="/assets/hero-app.png" alt="Eventure event details" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 4: SYSTEM TUTORIAL — CSS-only carousel -->
+  <section id="tutorial">
+    <div class="section-inner">
+      <h2 class="section-title">System Tutorial</h2>
+
+      <!-- Radio inputs — must come before the elements they control via ~ selector -->
+      <input type="radio" name="slide" id="s1" checked />
+      <input type="radio" name="slide" id="s2" />
+      <input type="radio" name="slide" id="s3" />
+      <input type="radio" name="slide" id="s4" />
+
+      <!-- Slides -->
+      <div class="carousel-wrap">
+        <div class="slide slide-1">
+          <label class="carousel-btn" for="s4">&#60;</label>
+          <div class="carousel-img-frame">
+            <img src="/assets/hero-app.png" alt="Step 1" />
+          </div>
+          <label class="carousel-btn" for="s2">&#62;</label>
+        </div>
+        <div class="slide slide-2">
+          <label class="carousel-btn" for="s1">&#60;</label>
+          <div class="carousel-img-frame">
+            <img src="/assets/campus-event.png" alt="Step 2" />
+          </div>
+          <label class="carousel-btn" for="s3">&#62;</label>
+        </div>
+        <div class="slide slide-3">
+          <label class="carousel-btn" for="s2">&#60;</label>
+          <div class="carousel-img-frame">
+            <img src="/assets/hero-app.png" alt="Step 3" />
+          </div>
+          <label class="carousel-btn" for="s4">&#62;</label>
+        </div>
+        <div class="slide slide-4">
+          <label class="carousel-btn" for="s3">&#60;</label>
+          <div class="carousel-img-frame">
+            <img src="/assets/campus-event.png" alt="Step 4" />
+          </div>
+          <label class="carousel-btn" for="s1">&#62;</label>
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div class="carousel-dots">
+        <label for="s1" title="Step 1"></label>
+        <label for="s2" title="Step 2"></label>
+        <label for="s3" title="Step 3"></label>
+        <label for="s4" title="Step 4"></label>
+      </div>
+
+      <!-- Descriptions — one per step -->
+      <p class="slide-desc desc-1">
+        Start by creating a new event within Eventure. Input all relevant details — event name, date, venue, and maximum participant capacity. The system validates your inputs and sets up the event record, ready to receive registrations.
+      </p>
+      <p class="slide-desc desc-2">
+        Once the event is created, add participants by importing a student list or registering them individually. Eventure stores each participant's information securely, giving you a clean registry to work from on the day of the event.
+      </p>
+      <p class="slide-desc desc-3">
+        As participants arrive, mark their attendance directly in Eventure. The system tracks capacity in real time, displaying live counts and alerting organizers when the venue is approaching its limit — keeping everything safe and under control.
+      </p>
+      <p class="slide-desc desc-4">
+        After the event concludes, Eventure compiles a complete attendance report. Export clean, formatted data for submission to faculty advisors or student council records. Every event is documented and archived for future reference.
+      </p>
+    </div>
+  </section>
+
+  <!-- SCREEN 5: TEAM / DEVELOPERS -->
+  <section id="team">
+    <div class="section-inner">
+      <h2 class="section-title">Developers</h2>
+
+      <div class="team-row">
+        <div class="team-card">
+          <div class="team-avatar">JKG</div>
+          <p class="team-name">Justine Karl Garcia</p>
+          <p class="team-role">Lead Developer</p>
+          <p class="team-desc">Oversees system architecture and leads the core development of Eventure.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">CAR</div>
+          <p class="team-name">Charles Andrew Ramos</p>
+          <p class="team-role">UI Designer</p>
+          <p class="team-desc">Designed the layout, navigation, and overall user experience of the system.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">DT</div>
+          <p class="team-name">Davidson Tan</p>
+          <p class="team-role">Graphics Designer</p>
+          <p class="team-desc">Created visual assets like logos, icons, and design elements for the interface.</p>
+        </div>
+      </div>
+
+      <div class="team-row">
+        <div class="team-card">
+          <div class="team-avatar">MRA</div>
+          <p class="team-name">Mitchelle Reign Abrio</p>
+          <p class="team-role">QA Tester</p>
+          <p class="team-desc">Ensures reliability through thorough testing and validation of each release.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">LGM</div>
+          <p class="team-name">Louiess Gabriel Manuel</p>
+          <p class="team-role">Documentation</p>
+          <p class="team-desc">Produces technical documentation, user manuals, and academic deliverables.</p>
+        </div>
+      </div>
+
+      <p class="team-note">Eventure is an academic project developed to address real challenges in campus event management.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">Eventure</span>
+      <div class="footer-copy">
+        <p>&copy; 2026 Eventure Management System.</p>
+        <p>Academic Project.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
