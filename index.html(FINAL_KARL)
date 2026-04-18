@@ -1,1 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventure - Promotional Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="#home" aria-label="Eventure home">
+        <span class="nav-logo-img">
+          <img src="logosymbolicwhite.png" alt="Eventure logo" />
+        </span>
+        <span class="nav-brand-text">Eventure</span>
+      </a>
 
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#feature">Features</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-label" type="button" aria-expanded="false" aria-controls="nav-about-menu">
+            About
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+
+          <div class="nav-dropdown-menu" id="nav-about-menu">
+            <a href="#tutorial">System Tutorial</a>
+            <a href="#about">About the System</a>
+            <a href="#team">Team</a>
+            <a href="#reviews">Reviews</a>
+          </div>
+        </div>
+
+        <a class="nav-cta" href="#download">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="section-inner">
+      <div class="hero-grid">
+        <div class="hero-logo-frame">
+          <img src="EVENTURE_TYPOGRAPHY_LOGO.png" alt="Eventure typography logo" class="hero-typography" />
+        </div>
+        <p class="hero-slogan">Making Events Easy</p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#download">Download</a>
+          <a class="btn btn-secondary" href="#tutorial">Tutorial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tutorial">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">System Tutorial</h2>
+      </div>
+
+      <input type="radio" name="slide" id="s1" checked />
+      <input type="radio" name="slide" id="s2" />
+      <input type="radio" name="slide" id="s3" />
+      <input type="radio" name="slide" id="s4" />
+
+      <div class="tutorial-shell">
+        <div class="carousel-wrap">
+          <div class="slide slide-1">
+            <label class="carousel-btn carousel-btn-prev" for="s4" aria-label="Go to step 4">&#60;</label>
+
+            <div class="tutorial-preview">
+              <div class="carousel-media">
+                <div class="carousel-img-frame">
+                  <img src="Created Event.jpeg" alt="Step 1" />
+                </div>
+
+                <div class="carousel-overlay">
+                  <span class="carousel-counter">1/4</span>
+
+                  <div class="carousel-dots" aria-label="Tutorial slide navigation">
+                    <label for="s1" title="Step 1"></label>
+                    <label for="s2" title="Step 2"></label>
+                    <label for="s3" title="Step 3"></label>
+                    <label for="s4" title="Step 4"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tutorial-copy">
+              <p class="slide-desc">
+                Start by creating a new event within Eventure. Input all relevant details - event name, date, venue, and maximum participant capacity. The system validates your inputs and sets up the event record, ready to receive registrations.
+              </p>
+            </div>
+
+            <label class="carousel-btn carousel-btn-next" for="s2" aria-label="Go to step 2">&#62;</label>
+          </div>
+
+          <div class="slide slide-2">
+            <label class="carousel-btn carousel-btn-prev" for="s1" aria-label="Go to step 1">&#60;</label>
+
+            <div class="tutorial-preview">
+              <div class="carousel-media">
+                <div class="carousel-img-frame">
+                  <img src="Event.jpeg" alt="Step 2" />
+                </div>
+
+                <div class="carousel-overlay">
+                  <span class="carousel-counter">2/4</span>
+
+                  <div class="carousel-dots" aria-label="Tutorial slide navigation">
+                    <label for="s1" title="Step 1"></label>
+                    <label for="s2" title="Step 2"></label>
+                    <label for="s3" title="Step 3"></label>
+                    <label for="s4" title="Step 4"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tutorial-copy">
+              <p class="slide-desc">
+                Once the event is created, add participants by importing a student list or registering them individually. Eventure stores each participant&apos;s information securely, giving you a clean registry to work from on the day of the event.
+              </p>
+            </div>
+
+            <label class="carousel-btn carousel-btn-next" for="s3" aria-label="Go to step 3">&#62;</label>
+          </div>
+
+          <div class="slide slide-3">
+            <label class="carousel-btn carousel-btn-prev" for="s2" aria-label="Go to step 2">&#60;</label>
+
+            <div class="tutorial-preview">
+              <div class="carousel-media">
+                <div class="carousel-img-frame">
+                  <img src="Create A.jpeg" alt="Step 3" />
+                </div>
+
+                <div class="carousel-overlay">
+                  <span class="carousel-counter">3/4</span>
+
+                  <div class="carousel-dots" aria-label="Tutorial slide navigation">
+                    <label for="s1" title="Step 1"></label>
+                    <label for="s2" title="Step 2"></label>
+                    <label for="s3" title="Step 3"></label>
+                    <label for="s4" title="Step 4"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tutorial-copy">
+              <p class="slide-desc">
+                As participants arrive, mark their attendance directly in Eventure. The system tracks capacity in real time, displaying live counts and alerting organizers when the venue is approaching its limit - keeping everything safe and under control.
+              </p>
+            </div>
+
+            <label class="carousel-btn carousel-btn-next" for="s4" aria-label="Go to step 4">&#62;</label>
+          </div>
+
+          <div class="slide slide-4">
+            <label class="carousel-btn carousel-btn-prev" for="s3" aria-label="Go to step 3">&#60;</label>
+
+            <div class="tutorial-preview">
+              <div class="carousel-media">
+                <div class="carousel-img-frame">
+                  <img src="Created A.jpeg" alt="Step 4" />
+                </div>
+
+                <div class="carousel-overlay">
+                  <span class="carousel-counter">4/4</span>
+
+                  <div class="carousel-dots" aria-label="Tutorial slide navigation">
+                    <label for="s1" title="Step 1"></label>
+                    <label for="s2" title="Step 2"></label>
+                    <label for="s3" title="Step 3"></label>
+                    <label for="s4" title="Step 4"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tutorial-copy">
+              <p class="slide-desc">
+                After the event concludes, Eventure compiles a complete attendance report. Export clean, formatted data for submission to faculty advisors or student council records. Every event is documented and archived for future reference.
+              </p>
+            </div>
+
+            <label class="carousel-btn carousel-btn-next" for="s1" aria-label="Go to step 1">&#62;</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature" class="feature">
+    <div class="section-inner feature-inner">
+      <div class="section-header">
+        <h2 class="section-title">Features</h2>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Create &amp; Manage Event</h3>
+          <p class="feature-text">
+            A dashboard where users create and provide details such as date, place, etc.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Participant Registration</h3>
+          <p class="feature-text">
+            A quick input field for participants to add them to the event.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Participant List and Capacity Monitor</h3>
+          <p class="feature-text">
+            Shows all registered participants. Users can view or remove them.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Event Status Alert</h3>
+          <p class="feature-text">
+            Real-time indication whether the event is &quot;Open&quot;, &quot;Full&quot;, or &quot;Closed&quot;.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Event Budget Tracker</h3>
+          <p class="feature-text">
+            Users can add and manage event expenses and income.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Data Storage</h3>
+          <p class="feature-text">
+            All participant data is stored in a SQL database (via JDBC).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-inner about-stack">
+      <div class="about-row">
+        <div class="about-img">
+          <img src="Participants.jpeg" alt="Campus event" />
+        </div>
+
+        <div class="about-text">
+          <h2>What is Eventure?</h2>
+          <p>A unified platform for effortless campus event management - from creation to attendance tracking.</p>
+
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <span class="benefit-icon" aria-hidden="true">&#128203;</span>
+              <strong>Create &amp; Manage</strong>
+              <p>Define events with dates, venues, and capacity limits</p>
+            </div>
+
+            <div class="benefit-item">
+              <span class="benefit-icon" aria-hidden="true">&#10003;</span>
+              <strong>Track Attendance</strong>
+              <p>Real-time participant registration and check-in</p>
+            </div>
+
+            <div class="benefit-item">
+              <span class="benefit-icon" aria-hidden="true">&#128202;</span>
+              <strong>Monitor Capacity</strong>
+              <p>Live alerts when venues are full</p>
+            </div>
+
+            <div class="benefit-item">
+              <span class="benefit-icon" aria-hidden="true">&#128193;</span>
+              <strong>Generate Reports</strong>
+              <p>Export clean, organized event data</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-row">
+        <div class="about-text">
+          <h2>Why Eventure Matters</h2>
+          <p>Replace scattered spreadsheets with one powerful platform your entire team actually enjoys using.</p>
+
+          <div class="problems-solutions">
+            <div class="problem-card">
+              <span class="icon-x" aria-hidden="true">&#10007;</span>
+              <p><strong>The Problem:</strong> Overcrowded venues, inaccurate headcounts, lost data</p>
+            </div>
+
+            <div class="problem-card solution">
+              <span class="icon-check" aria-hidden="true">&#10003;</span>
+              <p><strong>The Solution:</strong> Centralized control, real-time capacity alerts, complete records</p>
+            </div>
+          </div>
+
+          <p class="about-note"><em>Built for student organizations. Professional-grade tools. Campus-friendly interface.</em></p>
+        </div>
+
+        <div class="about-img">
+          <img src="Created Event.jpeg" alt="Eventure dashboard" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">What can you say about the system?</h2>
+      </div>
+
+      <div class="review-container">
+        <div class="review-card">
+          <p class="review-text">
+            &ldquo;Eventure made organizing our campus event so easy and efficient!&rdquo;
+          </p>
+          <h4 class="review-name">&ndash; John D.</h4>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            &ldquo;The participant tracking feature is super helpful!&rdquo;
+          </p>
+          <h4 class="review-name">&ndash; Maria S.</h4>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">
+            &ldquo;Clean design and very easy to use. Highly recommended!&rdquo;
+          </p>
+          <h4 class="review-name">&ndash; Alex T.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Developers</h2>
+      </div>
+
+      <div class="team-row">
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="JKG.jpeg" alt="Justine Karl Garcia" />
+          </div>
+          <p class="team-name">Justine Karl Garcia</p>
+          <p class="team-role">Lead Developer</p>
+          <p class="team-desc">Oversees system architecture and leads the core development of Eventure.</p>
+          <a class="team-link" href="Portfolio/JKG.html">Learn more &rarr;</a>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="CAR.jpeg" alt="Charles Andrew Ramos" />
+          </div>
+          <p class="team-name">Charles Andrew Ramos</p>
+          <p class="team-role">UI/UX Designer</p>
+          <p class="team-desc">Designed the layout, navigation, and overall user experience of the system.</p>
+          <a class="team-link" href="Portfolio/CAR.html">Learn more &rarr;</a>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="DST.jpeg" alt="Davidson Tan" />
+          </div>
+          <p class="team-name">Davidson Tan</p>
+          <p class="team-role">Graphics Designer</p>
+          <p class="team-desc">Created visual assets like logos, icons, and design elements for the interface.</p>
+          <a class="team-link" href="Portfolio/DT.html">Learn more &rarr;</a>
+        </div>
+      </div>
+
+      <div class="team-row">
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="MRA.jpeg" alt="Mitchelle Reign Abrio" />
+          </div>
+          <p class="team-name">Mitchelle Reign Abrio</p>
+          <p class="team-role">QA Tester</p>
+          <p class="team-desc">Ensures reliability through thorough testing and validation of each release.</p>
+          <a class="team-link" href="Portfolio/MRA.html">Learn more &rarr;</a>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="LG.jpeg" alt="Louiess Gabriel Manuel" />
+          </div>
+          <p class="team-name">Louiess Gabriel Manuel</p>
+          <p class="team-role">QA Tester</p>
+          <p class="team-desc">Produces technical documentation, and thorough testing.</p>
+          <a class="team-link" href="Portfolio/LG.html">Learn more &rarr;</a>
+        </div>
+      </div>
+
+      <p class="team-note">Eventure is an academic project developed to address real challenges in campus event management.</p>
+    </div>
+  </section>
+
+  <footer id="download">
+    <div class="footer-inner">
+      <span class="footer-logo">Eventure</span>
+      <div class="footer-copy">
+        <p>&copy; 2026 Eventure Management System.</p>
+        <p>Academic Project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navDropdown = document.querySelector(".nav-dropdown");
+    const navDropdownButton = document.querySelector(".nav-dropdown-label");
+    const navDropdownLinks = document.querySelectorAll(".nav-dropdown-menu a");
+
+    if (navDropdown && navDropdownButton) {
+      const closeDropdown = () => {
+        navDropdown.classList.remove("is-open");
+        navDropdownButton.setAttribute("aria-expanded", "false");
+      };
+
+      navDropdownButton.addEventListener("click", () => {
+        const isOpen = navDropdown.classList.toggle("is-open");
+        navDropdownButton.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!navDropdown.contains(event.target)) {
+          closeDropdown();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          closeDropdown();
+          navDropdownButton.focus();
+        }
+      });
+
+      navDropdownLinks.forEach((link) => {
+        link.addEventListener("click", closeDropdown);
+      });
+    }
+  </script>
+</body>
+</html>
