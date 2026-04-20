@@ -7,10 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  
+
   <!-- Global Styles & Reset -->
   <link rel="stylesheet" href="css/style-global.css" />
-  
+
   <!-- Component Styles -->
   <link rel="stylesheet" href="css/style-buttons.css" />
   <link rel="stylesheet" href="css/style-nav.css" />
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/style-reviews.css" />
   <link rel="stylesheet" href="css/style-team.css" />
   <link rel="stylesheet" href="css/style-footer.css" />
-  
+
   <!-- Animations -->
   <link rel="stylesheet" href="css/style-animations.css" />
 </head>
@@ -64,7 +64,7 @@
     <div class="section-inner">
       <div class="hero-grid">
         <div class="hero-logo-frame">
-          <img src="EVENTURE_TYPOGRAPHY_LOGO.png" alt="Eventure typography logo" class="hero-typography" />
+          <img src="LITERARY-LOGO.png" alt="Eventure typography logo" class="hero-typography" />
         </div>
         <p class="hero-slogan">Making Events Easy</p>
 
@@ -126,7 +126,7 @@
             <div class="tutorial-preview">
               <div class="carousel-media">
                 <div class="carousel-img-frame">
-                  <img src="EVENT-BLANKED.jpg" alt="Step 2" />
+                  <img src="EVENTS-BLANKED.jpg" alt="Step 2" />
                 </div>
 
                 <div class="carousel-overlay">
@@ -359,7 +359,7 @@
         </div>
 
         <div class="about-img">
-          <img src="EVENT-DETAILS.jpg" alt="Eventure dashboard" />
+          <img src="EVENTS-DETAILS.jpg" alt="Eventure dashboard" />
         </div>
       </div>
     </div>
