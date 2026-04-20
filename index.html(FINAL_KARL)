@@ -95,7 +95,7 @@
             <div class="tutorial-preview">
               <div class="carousel-media">
                 <div class="carousel-img-frame">
-                  <img src="Created Event.jpeg" alt="Step 1" />
+                  <img src="EVENT-CREATING.jpg" alt="Step 1" />
                 </div>
 
                 <div class="carousel-overlay">
@@ -126,7 +126,7 @@
             <div class="tutorial-preview">
               <div class="carousel-media">
                 <div class="carousel-img-frame">
-                  <img src="Event.jpeg" alt="Step 2" />
+                  <img src="EVENT-BLANKED.jpg" alt="Step 2" />
                 </div>
 
                 <div class="carousel-overlay">
@@ -157,7 +157,7 @@
             <div class="tutorial-preview">
               <div class="carousel-media">
                 <div class="carousel-img-frame">
-                  <img src="Create A.jpeg" alt="Step 3" />
+                  <img src="INFO-INPUT.jpg" alt="Step 3" />
                 </div>
 
                 <div class="carousel-overlay">
@@ -188,7 +188,7 @@
             <div class="tutorial-preview">
               <div class="carousel-media">
                 <div class="carousel-img-frame">
-                  <img src="Created A.jpeg" alt="Step 4" />
+                  <img src="INFO-PLACED.jpg" alt="Step 4" />
                 </div>
 
                 <div class="carousel-overlay">
@@ -303,7 +303,7 @@
     <div class="section-inner about-stack">
       <div class="about-row">
         <div class="about-img">
-          <img src="Participants.jpeg" alt="Campus event" />
+          <img src="EVENT-CREATION.jpg" alt="Campus event" />
         </div>
 
         <div class="about-text">
@@ -359,7 +359,7 @@
         </div>
 
         <div class="about-img">
-          <img src="Created Event.jpeg" alt="Eventure dashboard" />
+          <img src="EVENT-DETAILS.jpg" alt="Eventure dashboard" />
         </div>
       </div>
     </div>
