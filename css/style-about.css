@@ -1,0 +1,259 @@
+/* ===========================
+   ABOUT SECTION STYLES
+   =========================== */
+
+#about .section-inner::before {
+  background: radial-gradient(circle at 20% 40%, rgba(67, 217, 191, 0.12), transparent 48%);
+}
+
+.about-stack {
+  display: grid;
+  gap: 34px;
+}
+
+.about-row {
+  --about-border: rgba(130, 221, 255, 0.16);
+  --about-glow: rgba(130, 221, 255, 0.16);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.02fr 1fr;
+  gap: 32px;
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(28px, 3.8vw, 38px);
+  border: 1px solid rgba(130, 221, 255, 0.12);
+  border-radius: clamp(30px, 4vw, 40px);
+  background:
+    radial-gradient(circle at 84% 18%, rgba(130, 221, 255, 0.14), transparent 34%),
+    radial-gradient(circle at 12% 92%, rgba(67, 217, 191, 0.07), transparent 26%),
+    linear-gradient(160deg, rgba(6, 11, 20, 0.96), rgba(9, 17, 31, 0.94));
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(18px);
+  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.about-row::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  right: -80px;
+  bottom: -120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--about-glow), transparent 72%);
+  pointer-events: none;
+}
+
+.about-row:nth-child(even) {
+  --about-border: rgba(122, 141, 255, 0.18);
+  --about-glow: rgba(122, 141, 255, 0.16);
+  grid-template-columns: 1fr 1.02fr;
+  background:
+    radial-gradient(circle at 16% 16%, rgba(122, 141, 255, 0.16), transparent 34%),
+    radial-gradient(circle at 84% 88%, rgba(130, 221, 255, 0.08), transparent 30%),
+    linear-gradient(160deg, rgba(8, 14, 28, 0.96), rgba(9, 17, 32, 0.94));
+}
+
+.about-img {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid rgba(130, 221, 255, 0.14);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.24);
+}
+
+.about-text h2 {
+  margin-bottom: 18px;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.about-text p {
+  margin-bottom: 16px;
+  color: var(--text-soft);
+  font-size: 1rem;
+}
+
+.about-text p:first-of-type {
+  margin-bottom: 24px;
+  color: var(--text);
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.benefits-list,
+.problems-solutions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.benefit-item,
+.problem-card {
+  position: relative;
+  border: 0;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(130, 221, 255, 0.08), transparent 32%),
+    linear-gradient(180deg, rgba(12, 24, 37, 0.54), rgba(8, 16, 26, 0.36));
+  box-shadow:
+    inset 0 0 0 1px rgba(130, 221, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.benefit-item::before,
+.problem-card::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 0;
+  width: 2px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, transparent, rgba(130, 221, 255, 0.62), transparent);
+}
+
+.benefit-item {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  padding: 18px;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.benefit-item:hover {
+  transform: none;
+  box-shadow:
+    inset 0 0 0 1px rgba(130, 221, 255, 0.14),
+    inset 0 0 0 999px rgba(255, 255, 255, 0.014);
+}
+
+.benefit-item:nth-child(even) {
+  background:
+    radial-gradient(circle at 82% 12%, rgba(67, 217, 191, 0.12), transparent 32%),
+    linear-gradient(180deg, rgba(10, 34, 39, 0.58), rgba(7, 18, 25, 0.38));
+  box-shadow:
+    inset 0 0 0 1px rgba(67, 217, 191, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.benefit-item:nth-child(even)::before {
+  background: linear-gradient(180deg, transparent, rgba(67, 217, 191, 0.64), transparent);
+}
+
+.benefit-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  color: var(--primary);
+  background: linear-gradient(135deg, rgba(130, 221, 255, 0.22), rgba(79, 140, 255, 0.16));
+  font-size: 1.15rem;
+}
+
+.benefit-item:nth-child(even) .benefit-icon {
+  color: var(--accent-teal);
+  background: linear-gradient(135deg, rgba(67, 217, 191, 0.24), rgba(67, 217, 191, 0.12));
+}
+
+.benefit-item strong {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  color: var(--text-inverse);
+}
+
+.benefit-item p {
+  margin: 0;
+  color: var(--text-inverse-soft);
+  font-size: 0.95rem;
+}
+
+.problem-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 84% 14%, rgba(122, 141, 255, 0.1), transparent 32%),
+    linear-gradient(180deg, rgba(16, 28, 53, 0.56), rgba(8, 17, 31, 0.38));
+  box-shadow:
+    inset 0 0 0 1px rgba(122, 141, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.problem-card.solution {
+  background: linear-gradient(180deg, rgba(10, 40, 36, 0.58), rgba(6, 22, 24, 0.42));
+  box-shadow:
+    inset 0 0 0 1px rgba(29, 185, 131, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.problem-card.solution::before {
+  background: linear-gradient(180deg, transparent, rgba(29, 185, 131, 0.64), transparent);
+}
+
+.icon-x,
+.icon-check {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.icon-x {
+  color: var(--danger);
+  background: rgba(240, 109, 122, 0.12);
+}
+
+.icon-check {
+  color: var(--success);
+  background: rgba(29, 185, 131, 0.12);
+}
+
+.problem-card p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.96rem;
+}
+
+.problem-card strong {
+  color: var(--text);
+}
+
+.about-note {
+  margin-top: 24px;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+/* ===========================
+   RESPONSIVE ABOUT
+   =========================== */
+
+@media (max-width: 900px) {
+  .about-row,
+  .about-row:nth-child(even) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .benefits-list,
+  .problems-solutions {
+    grid-template-columns: 1fr;
+  }
+}

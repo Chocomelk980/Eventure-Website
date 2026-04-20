@@ -1,0 +1,77 @@
+/* ===========================
+   ANIMATIONS & KEYFRAMES
+   =========================== */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-glow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(18px, -16px, 0) scale(1.08);
+  }
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-180%) skewX(-22deg);
+  }
+
+  100% {
+    transform: translateX(420%) skewX(-22deg);
+  }
+}
+
+/* ===========================
+   ANIMATION DELAYS
+   =========================== */
+
+.feature-card:nth-child(2),
+.review-card:nth-child(2),
+.team-row .team-card:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.feature-card:nth-child(3),
+.review-card:nth-child(3),
+.team-row .team-card:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+.feature-card:nth-child(4),
+.team-row:last-of-type .team-card:nth-child(1) {
+  animation-delay: 0.24s;
+}
+
+.feature-card:nth-child(5),
+.team-row:last-of-type .team-card:nth-child(2) {
+  animation-delay: 0.32s;
+}
+
+.feature-card:nth-child(6) {
+  animation-delay: 0.4s;
+}

@@ -1,0 +1,158 @@
+/* ===========================
+   HERO SECTION STYLES
+   =========================== */
+
+#home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 116px;
+  overflow: hidden;
+  background: transparent;
+}
+
+#home::before,
+#home::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(8px);
+  animation: float-glow 12s ease-in-out infinite;
+}
+
+#home::before {
+  width: 520px;
+  height: 520px;
+  top: 52px;
+  left: 4%;
+  background: radial-gradient(circle, rgba(130, 221, 255, 0.16), transparent 62%);
+}
+
+#home::after {
+  width: 580px;
+  height: 580px;
+  right: 2%;
+  bottom: -120px;
+  background: radial-gradient(circle, rgba(122, 141, 255, 0.18), transparent 68%);
+  animation-delay: -6s;
+}
+
+.hero-grid {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  width: min(980px, 100%);
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 0;
+  text-align: center;
+  animation: hero-float 6s ease-in-out 0.9s infinite;
+}
+
+.hero-grid::before,
+.hero-grid::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-grid::before {
+  inset: 2% 14% auto;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(130, 221, 255, 0.08), rgba(122, 141, 255, 0.09) 42%, transparent 72%);
+  filter: blur(18px);
+}
+
+.hero-grid::after {
+  left: 18%;
+  right: 18%;
+  bottom: -24px;
+  height: 44px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 50% 50%, rgba(130, 221, 255, 0.24), rgba(122, 141, 255, 0.12) 44%, transparent 72%);
+  filter: blur(16px);
+}
+
+.hero-logo-frame,
+.hero-slogan,
+.hero-buttons {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-logo-frame {
+  width: min(840px, 100%);
+  height: clamp(70px, 12vw, 150px);
+  overflow: hidden;
+  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  filter:
+    drop-shadow(0 24px 46px rgba(0, 0, 0, 0.28))
+    drop-shadow(0 0 18px rgba(79, 140, 255, 0.1));
+  transition: filter 0.35s ease;
+}
+
+.hero-typography {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform-origin: center;
+  transition: transform 0.35s ease;
+}
+
+.hero-logo-frame:hover {
+  filter:
+    drop-shadow(0 0 18px rgba(0, 225, 255, 0.72))
+    drop-shadow(0 0 42px rgba(54, 138, 255, 0.54))
+    drop-shadow(0 24px 46px rgba(0, 0, 0, 0.28));
+}
+
+.hero-logo-frame:hover .hero-typography {
+  transform: scale(1.07);
+}
+
+.hero-slogan {
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.06rem, 1.48vw, 1.4rem);
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  color: #16d7ff;
+  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.14s both;
+  text-shadow:
+    0 0 16px rgba(22, 215, 255, 0.35),
+    0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 14px;
+  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.28s both;
+}
+
+/* ===========================
+   RESPONSIVE HERO SECTION
+   =========================== */
+
+@media (max-width: 900px) {
+  #home {
+    padding-top: 170px;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+}
