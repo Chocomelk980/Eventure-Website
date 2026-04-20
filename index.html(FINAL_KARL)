@@ -7,7 +7,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css"/>
+  
+  <!-- Global Styles & Reset -->
+  <link rel="stylesheet" href="css/style-global.css" />
+  
+  <!-- Component Styles -->
+  <link rel="stylesheet" href="css/style-buttons.css" />
+  <link rel="stylesheet" href="css/style-nav.css" />
+  <link rel="stylesheet" href="css/style-hero.css" />
+  <link rel="stylesheet" href="css/style-tutorial.css" />
+  <link rel="stylesheet" href="css/style-features.css" />
+  <link rel="stylesheet" href="css/style-about.css" />
+  <link rel="stylesheet" href="css/style-reviews.css" />
+  <link rel="stylesheet" href="css/style-team.css" />
+  <link rel="stylesheet" href="css/style-footer.css" />
+  
+  <!-- Animations -->
+  <link rel="stylesheet" href="css/style-animations.css" />
 </head>
 <body>
   <nav>
@@ -209,45 +225,75 @@
 
       <div class="feature-grid">
         <div class="feature-card">
-          <h3>Create &amp; Manage Event</h3>
-          <p class="feature-text">
-            A dashboard where users create and provide details such as date, place, etc.
-          </p>
+          <div class="feature-icon-box">
+            <span class="feature-icon">📋</span>
+          </div>
+          <div class="feature-content">
+            <h3>Create &amp; Manage Event</h3>
+            <p class="feature-text">
+              A dashboard where users create and provide details such as date, place, etc.
+            </p>
+          </div>
         </div>
 
         <div class="feature-card">
-          <h3>Participant Registration</h3>
-          <p class="feature-text">
-            A quick input field for participants to add them to the event.
-          </p>
+          <div class="feature-icon-box">
+            <span class="feature-icon">✍️</span>
+          </div>
+          <div class="feature-content">
+            <h3>Participant Registration</h3>
+            <p class="feature-text">
+              A quick input field for participants to add them to the event.
+            </p>
+          </div>
         </div>
 
         <div class="feature-card">
-          <h3>Participant List and Capacity Monitor</h3>
-          <p class="feature-text">
-            Shows all registered participants. Users can view or remove them.
-          </p>
+          <div class="feature-icon-box">
+            <span class="feature-icon">👥</span>
+          </div>
+          <div class="feature-content">
+            <h3>Participant List and Capacity Monitor</h3>
+            <p class="feature-text">
+              Shows all registered participants. Users can view or remove them.
+            </p>
+          </div>
         </div>
 
         <div class="feature-card">
-          <h3>Event Status Alert</h3>
-          <p class="feature-text">
-            Real-time indication whether the event is &quot;Open&quot;, &quot;Full&quot;, or &quot;Closed&quot;.
-          </p>
+          <div class="feature-icon-box">
+            <span class="feature-icon">🔔</span>
+          </div>
+          <div class="feature-content">
+            <h3>Event Status Alert</h3>
+            <p class="feature-text">
+              Real-time indication whether the event is &quot;Open&quot;, &quot;Full&quot;, or &quot;Closed&quot;.
+            </p>
+          </div>
         </div>
 
         <div class="feature-card">
-          <h3>Event Budget Tracker</h3>
-          <p class="feature-text">
-            Users can add and manage event expenses and income.
-          </p>
+          <div class="feature-icon-box">
+            <span class="feature-icon">💰</span>
+          </div>
+          <div class="feature-content">
+            <h3>Event Budget Tracker</h3>
+            <p class="feature-text">
+              Users can add and manage event expenses and income.
+            </p>
+          </div>
         </div>
 
         <div class="feature-card">
-          <h3>Data Storage</h3>
-          <p class="feature-text">
-            All participant data is stored in a SQL database (via JDBC).
-          </p>
+          <div class="feature-icon-box">
+            <span class="feature-icon">💾</span>
+          </div>
+          <div class="feature-content">
+            <h3>Data Storage</h3>
+            <p class="feature-text">
+              All participant data is stored in a SQL database (via JDBC).
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -420,6 +466,7 @@
       <div class="footer-copy">
         <p>&copy; 2026 Eventure Management System.</p>
         <p>Academic Project.</p>
+        <p>📧 eventure@gmail.com</p>
       </div>
     </div>
   </footer>
